@@ -1,0 +1,28 @@
+.sidebar {
+    @include flex (center,column);
+    flex: 1 1 0;
+    background-color:$bg-color;
+    border-radius: $container-border-radius;
+    text-align: center;
+    position: relative;
+    padding:  48px 0;
+
+    &__img {
+        max-width: 70%;
+        border-radius:$container-border-radius;
+        position: absolute;
+        top:-48px;
+    }
+
+    &__title {
+        color: $text-color-secondary;
+        background-color:$bg-color-secondary ;
+        border-radius: $card-border-radius;
+        margin-top: 192px;
+        padding:  12px 20px;
+    }
+
+    &__a {
+        @include button
+    }
+}

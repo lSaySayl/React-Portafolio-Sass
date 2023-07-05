@@ -1,0 +1,14 @@
+@mixin flex ($alig-items:flex-start,$flex-direction:row) {
+    display: flex;
+    align-items: $alig-items;
+    flex-direction: $flex-direction;
+}
+
+@mixin button () {
+    padding: 16px 19px;
+    color: $text-color;
+    background: $gradient;
+    text-decoration: none;
+    border-radius: $container-border-radius;
+  
+}

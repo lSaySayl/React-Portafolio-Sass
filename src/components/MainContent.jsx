@@ -1,12 +1,9 @@
-
-
 const MainContent = () => {
-    return (
-        <>
-        <p>Main</p>
-            
-        </>
-    );
-}
+  return (
+    <main className="main">
+      <p>Main</p>
+    </main>
+  );
+};
 
 export default MainContent;
