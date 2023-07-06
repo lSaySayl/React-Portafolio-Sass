@@ -1,0 +1,112 @@
+.technologies {
+  margin-bottom: 16px;
+
+  &__h2 {
+    @include flexCenter;
+    gap: 16px;
+    color: $text-color;
+    font-size: 35px;
+    margin-bottom: 18px;
+
+    &::before {
+      @include before;
+    }
+
+    &::after {
+      @include after;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+
+    #html {
+      svg {
+        color: $html;
+      }
+    }
+
+    #css {
+      svg {
+        color: $css;
+      }
+    }
+
+    #sass {
+      svg {
+        color: $sass;
+      }
+    }
+
+    #tailwind {
+      svg {
+        color: $tailwind;
+      }
+    }
+
+    #boostrap {
+      svg {
+        color: $boostrap;
+      }
+    }
+
+    #javascript {
+      svg {
+        color: $javascript;
+      }
+    }
+
+    #react {
+      svg {
+        color: $react;
+      }
+    }
+
+    #sql {
+      svg {
+        color: $sql;
+      }
+
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__card {
+    @include flexCenter;
+    gap: 16px;
+    padding: 16px;
+    border: 2px solid #333;
+    width: 45%;
+    border-radius: $card-border-radius;
+
+    &:hover {
+      @include cardHover
+      
+
+    }
+
+    svg {
+      font-size: 95px;
+    }
+
+    &-text {
+      h3 {
+        font-size: 25px;
+        color: $text-color;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+      }
+
+      p {
+        font-weight: bold;
+        color: $text-color-secondary;
+      }
+    }
+  }
+}

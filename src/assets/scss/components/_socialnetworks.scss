@@ -9,12 +9,12 @@
     background-color: $bg-color-secondary;
     border-radius: $card-border-radius;
     color: #333;
-    font-size: 30px;
+    font-size: 35px;
 
     &:hover {
       background: $gradient;
       svg {
-        color: white;
+        color:#111111;
       }
     }
   }

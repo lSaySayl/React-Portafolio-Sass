@@ -1,28 +1,37 @@
 .sidebar {
-    @include flex (center,column);
-    flex: 1 1 0;
-    background-color:$bg-color;
+  @include flex(center, column);
+  justify-content: space-around;
+  flex: 1 1 0;
+  background-color: $bg-color;
+  border-radius: $container-border-radius;
+  text-align: center;
+  position: relative;
+  padding: 48px 0;
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 15px #34354985;
+  }
+
+  &__img {
+    max-width: 70%;
     border-radius: $container-border-radius;
-    text-align: center;
-    position: relative;
-    padding:  48px 0;
+    position: absolute;
+    top: -10%;
+  }
 
-    &__img {
-        max-width: 70%;
-        border-radius:$container-border-radius;
-        position: absolute;
-        top:-48px;
-    }
+  &__title {
+    color: $text-color-secondary;
+    background-color: $bg-color-secondary;
+    border-radius: $card-border-radius;
+    margin-top: 40%;
+    padding: 12px 20px;
+  }
 
-    &__title {
-        color: $text-color-secondary;
-        background-color:$bg-color-secondary ;
-        border-radius: $card-border-radius;
-        margin-top: 192px;
-        padding:  12px 20px;
+  &__a {
+    @include button;
+    &:hover {
+      @include buttonHover;
     }
-
-    &__a {
-        @include button
-    }
+  }
 }

@@ -1,20 +1,46 @@
-@mixin flex ($alig-items:flex-start,$flex-direction:row) {
-    display: flex;
-    align-items: $alig-items;
-    flex-direction: $flex-direction;
+@mixin flex($alig-items: flex-start, $flex-direction: row) {
+  display: flex;
+  align-items: $alig-items;
+  flex-direction: $flex-direction;
 }
 
-@mixin flexCenter (){
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin button () {
-    padding: 16px 19px;
-    color: $text-color;
-    background: $gradient;
-    text-decoration: none;
-    border-radius: $container-border-radius;
-  
+@mixin button() {
+  padding: 16px 19px;
+  color: $text-color;
+  background: $gradient;
+  text-decoration: none;
+  border-radius: $container-border-radius;
+  font-weight: 600;
+}
+
+@mixin buttonHover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+@mixin before() {
+  content: "";
+  background: $gradient;
+  height: 4px;
+  width: 20%;
+}
+
+@mixin after() {
+  content: "";
+  background: $gradient;
+  height: 4px;
+  width: 20%;
+}
+
+@mixin cardHover() {
+  transition: 0.3s ease-in-out;
+  box-shadow: 3px 3px 15px #343549;
+  cursor: pointer;
 }

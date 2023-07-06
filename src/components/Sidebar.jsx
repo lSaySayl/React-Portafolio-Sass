@@ -1,10 +1,11 @@
 import Information from "./Information";
 import SocialNetworks from "./SocialNetworks";
+import person from "../assets/img/person.png"
 
 const Sidebar = () => {
   return (
     <section className="sidebar">
-    <img src="https://i.imgur.com/2w1QrhC.jpg" alt="imagen" className="sidebar__img" />
+    <img src={person} alt="person" className="sidebar__img" />
       <h2 className="sidebar__title">Información</h2>
       <SocialNetworks/>
       <Information/>

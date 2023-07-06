@@ -3,5 +3,57 @@
     flex: 2 1 0;
     border-radius: $container-border-radius;
     padding: 48px;
+
+    &:hover {
+        transition: 0.3s ease-in-out;
+        box-shadow: 3px 3px 15px #343549;
+       
+    }
     
+
+    .section {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            @include flexCenter;
+            /* justify-content: start; */
+            gap: 16px;
+            color: $text-color;
+            font-size: 35px;
+            margin-bottom: 18px;
+
+            &::before {
+                @include before
+
+               
+            }
+            
+            &::after {
+                @include after
+                
+            }
+        }
+
+        p {
+            text-align: justify;
+            color: $text-color-secondary;
+            margin-bottom: 16px;
+            line-height: 18px;
+        }
+
+        .projects__button {
+            @include button;
+
+            &:hover {
+                @include buttonHover
+                
+            }
+            align-self: flex-start;
+            
+        }
+
+
+    }
+
 }
