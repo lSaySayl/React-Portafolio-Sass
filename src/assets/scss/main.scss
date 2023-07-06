@@ -1,7 +1,9 @@
 @import "./abstracts/variables";
 @import "./base/reset";
 @import "./abstracts/mixins";
-@import "./components/app.scss";
-@import "./components/sidebar.scss";
-@import "./components/maincontent.scss"
+@import "./components/app";
+@import "./components/sidebar";
+@import "./components/maincontent";
+@import "components/socialnetworks";
+@import "components/information"
 

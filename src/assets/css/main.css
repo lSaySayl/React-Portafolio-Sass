@@ -60,4 +60,83 @@ body {
   flex: 2 1 0;
   border-radius: 10px;
   padding: 48px;
+}
+
+.socialnetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+.socialnetworks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  color: #333;
+  font-size: 30px;
+}
+.socialnetworks__link:hover {
+  background: linear-gradient(90deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%);
+}
+.socialnetworks__link:hover svg {
+  color: white;
+}
+.socialnetworks #github {
+  color: #fff;
+}
+.socialnetworks #linkedin {
+  color: #0072b1;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d1d1d;
+  padding: 16px;
+  margin-bottom: 32px;
+  text-align: left;
+  width: 80%;
+  border-radius: 5px;
+}
+.information__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  padding: 13px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+.information__card h3 {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.information__card p {
+  color: #a6a6a6;
+  font-weight: bold;
+}
+.information__card svg {
+  background-color: #111;
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+.information__card-mail {
+  color: #e93b81;
+}
+.information__card-map {
+  color: #6ab5b9;
+}
+.information__card-phone {
+  color: #c17ecb;
 }/*# sourceMappingURL=main.css.map */

@@ -4,6 +4,12 @@
     flex-direction: $flex-direction;
 }
 
+@mixin flexCenter (){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin button () {
     padding: 16px 19px;
     color: $text-color;

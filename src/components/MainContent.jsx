@@ -1,7 +1,14 @@
+import About from "./About";
+import Projects from "./Projects";
+import Technologies from "./Technologies";
+
 const MainContent = () => {
   return (
     <main className="main">
-      <p>Main</p>
+      <About/>
+      <Technologies/>
+      <Projects/>
+      
     </main>
   );
 };

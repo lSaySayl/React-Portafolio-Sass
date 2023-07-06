@@ -1,0 +1,29 @@
+.socialnetworks {
+  @include flexCenter;
+  gap: 16px;
+  margin: 16px 0;
+
+  &__link {
+    @include flexCenter;
+    padding: 10px;
+    background-color: $bg-color-secondary;
+    border-radius: $card-border-radius;
+    color: #333;
+    font-size: 30px;
+
+    &:hover {
+      background: $gradient;
+      svg {
+        color: white;
+      }
+    }
+  }
+
+  #github {
+    color: $text-color;
+  }
+
+  #linkedin {
+    color: #0072b1;
+  }
+}
