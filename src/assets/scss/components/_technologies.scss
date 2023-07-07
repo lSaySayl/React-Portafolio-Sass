@@ -26,49 +26,49 @@
 
     #html {
       svg {
-        color: $html;
+        color: map-get($colorIcons,"html");
       }
     }
 
     #css {
       svg {
-        color: $css;
+        color: map-get($colorIcons,"css");
       }
     }
 
     #sass {
       svg {
-        color: $sass;
+        color: map-get($colorIcons,"sass" );
       }
     }
 
     #tailwind {
       svg {
-        color: $tailwind;
+        color: map-get($colorIcons,"tailwind" );
       }
     }
 
     #boostrap {
       svg {
-        color: $boostrap;
+        color: map-get($colorIcons,"boostrap" );
       }
     }
 
     #javascript {
       svg {
-        color: $javascript;
+        color: map-get($colorIcons,"javascript");
       }
     }
 
     #react {
       svg {
-        color: $react;
+        color: map-get($colorIcons, "react");
       }
     }
 
     #sql {
       svg {
-        color: $sql;
+        color: map-get($colorIcons, "sql");
       }
 
       h3 {
